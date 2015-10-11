@@ -1,0 +1,138 @@
+/*index.html css for firefoxhomepage*/
+
+/*tags*/
+
+html {
+margin:0 0 0 0;
+padding:0 0 0 0;
+height:100vh;
+width:100%;
+}
+
+body {
+margin:0 0 0 0;
+padding:0 0 0 0;
+height:100vh;
+width:100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+li
+{
+padding-bottom:30px;
+font-size:2em;
+color:#000000;
+font-family:inconsolata,sans-serif;
+}
+
+a:link {
+color: white;
+text-decoration: none;
+}
+
+a:visited {
+color: white;
+text-decoration: none;
+}
+
+a:hover {
+color: #FD98B0;
+text-decoration: underline;
+}
+
+a:active {
+color: #FD98B0;
+text-decoration: underline;
+}
+
+/*end of tags*/
+/*id*/
+
+#container {
+min-height:100%;
+position:relative;
+}
+
+#favorites
+{
+width:100%;
+background-color:#000000;
+opacity:0.8;
+top:0;
+}
+
+/*google search*/
+
+#googleBar/*Search the internet using google or your preferred search engine.*/
+{
+position:relative;
+border:none;
+padding:0 0 0 0;
+margin: 0px 0px 0px 0px;
+color:#FFF;
+width:100%;
+background-color:#000;
+opacity:0.6;
+height:32px;
+} 
+
+/*link board divs*/
+
+#lain {
+position:relative;
+overflow-x:hidden;
+float:left;
+left:0.5%;
+width:49%;
+height:75vh;
+background-color:#000000;
+opacity:0.8;
+text-align:left;
+z-index:5;
+}
+
+#lain li
+{
+margin-left:0px;
+}
+#lain img
+{
+float:left;
+padding:2px;
+padding-bottom:10px;
+}
+button
+{
+visibility:hidden;
+}
+
+#fav
+{
+position:relative;
+overflow-x:hidden;
+float:right;
+right:0.5%;
+width:49%;
+height:75vh;
+background-color:#000000;
+opacity:0.8;
+text-align:right;
+z-index:5;
+}
+#fav li
+{
+margin-right:38px;
+}
+#fav img
+{
+float:right;
+padding:2px;
+padding-bottom:10px;
+}
+/*end of id*/
+/*class*/
+
+/*end of class*/
+/*end of css*/
+
