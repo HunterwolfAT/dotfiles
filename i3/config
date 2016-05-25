@@ -158,5 +158,6 @@ bar {
 # autostart a bunch of stuff
 exec feh --bg-fill ~/Documents/dotfiles/bg.png
 exec setxkbmap at
-exec synapse &
+exec synapse -s &
 exec sudo bleachbit --clean system.cache system.localizations system.trash system.tmp &
+exec compton --vsync opengl &
