@@ -155,6 +155,13 @@ bar {
         status_command i3status
 }
 
+#gaps settings
+gaps inner 10
+gaps outer 5
+#no gaps when there is only one window on the screen
+smart_gaps on
+smart_borders on
+
 # autostart a bunch of stuff
 exec feh --bg-fill ~/Documents/dotfiles/bg.png
 exec setxkbmap at
