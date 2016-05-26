@@ -15,3 +15,5 @@ alias uninstall='sudo pacman -R'
 alias aurinstall='aurget -S'
 alias aursearch='aurget -Ss'
 alias auruninstall='aurget -R'
+
+alias winsteam='wine /run/media/max/Data/8_Games/Steam/Steam.exe'
