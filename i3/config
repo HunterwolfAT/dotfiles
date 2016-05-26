@@ -12,10 +12,10 @@
 # MY CONFIG
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #3e5263 #3e5263 #ffffff #3e5263   #3e5263
-client.unfocused 	#2a3742 #2a3742 #ffffff #2a3742   #2a3742
+client.focused          #3e5263 #3e5263 #ffffff #5f819d   #3e5263
+client.unfocused 	#2a3742 #2a3742 #ffffff #486277   #2a3742
 client.focused_inactive #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #de935f #de935f #ffffff #de935f   #de935f
+client.urgent           #de935f #de935f #ffffff #f0c674   #de935f
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
