@@ -1,10 +1,10 @@
+import sys
 import socket
 import threading
 import time
 from subprocess import call
 
 REMOTE_SERVER = "www.google.com"
-restart = True
 
 def is_connected():
     try:
@@ -42,18 +42,19 @@ class downloader (threading.Thread):
             if (connected == False):
                 print("\nInternet Connection Failed. Restarting...\n")
                 self.restart = True
-                call(["killall", "youtube-dl"]);
+                call(["killall", sys.argv[1]]);
+            time.sleep(1)
 
-url = input("Enter URL of YouTube Video to Download:\n")
+if (len(sys.argv) > 1):
+    check = downloader()
+    check.start()
 
-check = downloader()
-check.start()
+    print("Starting Download...\n")
 
-print("Starting Download...\n")
+    while(check.checkRestart()):
+        call(sys.argv[1:])
 
-while(check.checkRestart()):
-    restart = False
-    call(["youtube-dl", url])
-
-check.stop()
-check.join()
+    check.stop()
+    check.join()
+else:
+    print("Please enter a command you want to have executed.")
